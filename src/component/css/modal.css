@@ -1,0 +1,175 @@
+.moreModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.moreModal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1000px;
+  width: 85%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.modalLeft {
+  width: 40%;
+}
+
+.modalLeft > img {
+  width: 100%;
+  height: 100%;
+}
+
+.modalRight {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalTop,
+.modalBotton {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.modalTop {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.TitleKr {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.TitleEn {
+  font-size: 18px;
+  color: gray;
+}
+
+.modalDate {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.modalMiddle {
+  padding: 0 20px;
+  width: 100%;
+  height: 65%;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+.modalBotton {
+  height: 10%;
+}
+
+.CloseBtn {
+  cursor: pointer;
+  width: 110px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+
+.CloseBtn:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .moreModal {
+    width: 75%;
+    height: 600px;
+  }
+
+  .modalLeft {
+    width: 50%;
+  }
+
+  .modalRight {
+    width: 50%;
+  }
+
+  .TitleKr {
+    font-size: 22px;
+  }
+
+  .TitleEn {
+    font-size: 15px;
+  }
+
+  .modalDate {
+    font-size: 12px;
+  }
+
+  .modalMiddle {
+    font-size: 14px;
+  }
+
+  .CloseBtn {
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .moreModal {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+  }
+
+  .modalLeft {
+    width: 100%;
+    height: 40%;
+  }
+
+  .modalRight {
+    width: 100%;
+    height: 60%;
+    padding: 5px 0;
+  }
+
+  .modalTop {
+    height: 20%;
+    margin-bottom: 5px;
+  }
+
+  .TitleKr {
+    font-size: 18px;
+  }
+
+  .TitleEn {
+    font-size: 14px;
+  }
+
+  .modalMiddle {
+    height: 70%;
+    font-size: 13px;
+  }
+
+  .CloseBtn {
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+  }
+}
